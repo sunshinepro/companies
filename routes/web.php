@@ -23,6 +23,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('customers', App\Http\Controllers\CustomerController::class);
 });
 
-Auth::routes(['register' => false]);
+Auth::routes();
+// (['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
