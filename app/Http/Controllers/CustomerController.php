@@ -48,8 +48,8 @@ class CustomerController extends Controller
         $this->validate($request, [
             'name' => 'required|max:32',
             'surname' => 'required|max:32',
-            'phone' => 'numeric, required|max:24',
-            'email' => 'email:rfc,dns,required|max:64'
+            'phone' => 'required|max:24',
+            'email' => 'required|max:64'
             
         ]);
 
