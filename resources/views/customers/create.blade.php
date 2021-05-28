@@ -24,14 +24,14 @@
             </div>
             <div class="form-group">
               <label>Phone: </label>
-              <input type="text" name="phone" class="form-control">
+              <input type="number" name="phone" class="form-control">
               @error('phone')
               <div class="alert alert-danger">{{ $message }}</div>
               @enderror
             </div>
             <div class="form-group">
                 <label>E-mail: </label>
-                <input type="text" name="email" class="form-control">
+                <input type="email" name="email" class="form-control">
                 @error('email')
                 <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

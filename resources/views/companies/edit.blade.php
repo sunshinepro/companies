@@ -17,7 +17,7 @@
               @enderror
             </div>
             <div class="form-group">
-              <label>Runs: </label>
+              <label>Address: </label>
               <input type="text" name="address" class="form-control" value="{{$company->address}}">
               @error('address')
               <div class="alert alert-danger">{{ $message }}</div>
